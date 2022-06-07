@@ -4,6 +4,7 @@
     --black: #000000;
     --orange: #fc5d35;
     --shadow: #d6d3d3;
+    --light-gray: #cdcdce;
 }
 /* Variable CSS end */
 /* Common CSS start */
@@ -14,6 +15,7 @@
 }
 img{
     max-width: 100%;
+    max-height: 100%;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -72,7 +74,7 @@ h5{
     padding: 10px ;
 }
 .cta-btn a{
-    padding: 20px 46px;
+    padding: 15px 46px;
     font-size: 17px;
     background-color: var(--black);
     color: var(--white);
@@ -96,7 +98,46 @@ h5{
     font-size: 177px;
 }
 /* Testy section end */
+/* Contact section start */
+.contact-section{
+    padding: 60px 25px;
+    position: relative;
+    background-image: url(img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: 18% 75%;
+    background-position: right top 75px;
+}
+form{    
+    font-size: 16px;
+}
+form input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: transparent;
+}
+form textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    resize: none;
+    position: relative;
+    background-color: transparent;
+}
+textarea::placeholder{
+    position: absolute;
+    bottom: 0;
+}
+.contact-section .cta-btn a{
+    background-color: var(--orange);
+}
+.contact-section .cta-btn a:hover{
+    background-color: var(--black);
+}
+/* Contact section end  */
+/* Footer  */
 
+/* Footer section end  */
 /* Responsive section start */
 @media (max-width: 991px){
     .fruit-box p{
@@ -113,10 +154,19 @@ h5{
     .testy-section h2{
         font-size: 80px;
     }
+    .fresh-section .cta-btn {
+        text-align: left;
+    }
+    .contact-section{
+        background-size: 40% 75%;
+    }
 }
 @media (max-width: 575px){
     .testy-section h2{
         font-size: 40px;
+    }
+    .contact-section{
+        background-size: 85% 75%;
     }
 }
 /* Responsive section end  */
