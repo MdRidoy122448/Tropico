@@ -1,0 +1,122 @@
+/* Variable CSS start */
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #fc5d35;
+    --shadow: #d6d3d3;
+}
+/* Variable CSS end */
+/* Common CSS start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.section-main-header{
+    font-size: 40px;
+}
+.section-main-paragraph{
+    font-size: 17px;
+}
+p{
+    font-size: 17px;
+}
+h5{
+    color: var(--orange);
+    font-size: 25px;
+}
+/* Common CSS end */
+
+/* Service section start */
+.service-seciton{
+    padding: 70px 0;
+}
+.fruit-box{
+    margin: 20px;
+    border: 1px solid var(--black);  
+    transition: 0.4s;  
+    position: relative;
+}
+.fruit-box:hover{
+    border: 1px solid var(--white);
+    box-shadow: 0px 0px 8px var(--shadow);
+}
+.fruit-box::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: var(--orange);
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.4s;
+}
+.fruit-box:hover::before{
+    height: 8px;
+}
+.fruit-img-box{
+    height: 85px;
+    width: 85px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.fruit-box p{
+    max-width: 310px;
+    padding: 10px ;
+}
+.cta-btn a{
+    padding: 20px 46px;
+    font-size: 17px;
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.5s;
+}
+.cta-btn a:hover{
+    background-color: var(--orange);
+}
+/* Service  section end */
+/* Fresh secition start  */
+.fresh-section{
+    padding: 60px 0;
+}
+/* Fresh section end  */
+/* Testy section start */
+.testy-section{
+    padding: 90px 0;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("img/testy-bg.jpg");
+}
+.testy-section h2{
+    font-size: 177px;
+}
+/* Testy section end */
+
+/* Responsive section start */
+@media (max-width: 991px){
+    .fruit-box p{
+        max-width: 100%;
+    }
+    .testy-section h2{
+        font-size: 125px;
+    }
+}
+@media (max-width: 767px){
+    .fresh-section .cta-btn {
+        text-align: center;
+    }
+    .testy-section h2{
+        font-size: 80px;
+    }
+}
+@media (max-width: 575px){
+    .testy-section h2{
+        font-size: 40px;
+    }
+}
+/* Responsive section end  */
