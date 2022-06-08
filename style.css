@@ -138,6 +138,16 @@ textarea::placeholder{
     background-color: var(--black);
 }
 /* Contact section end  */
+/* Map section start */
+.map-section{
+    width: 100%;
+    height: 600px;
+}
+.map-section iframe{
+    width: 100%;
+    height: 100%;
+}
+/* Map section end */
 /* Footer section start */
 footer{
     padding: 90px 0;
@@ -191,6 +201,9 @@ footer .cta-btn a:hover{
     }
     footer input{
         max-width: 280px;
+    }
+    .map-section{
+        height: 400px;
     }
 }
 @media (max-width: 767px){
