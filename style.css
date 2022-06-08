@@ -5,6 +5,9 @@
     --orange: #fc5d35;
     --shadow: #d6d3d3;
     --light-gray: #cdcdce;
+    --facebook-blue: #1773EA;
+    --twitter-blue: #1A98E8;
+    --linked-in-blue: #2764AC;
 }
 /* Variable CSS end */
 /* Common CSS start */
@@ -151,13 +154,31 @@ footer ul {
 footer ul li a i{
     width: 40px;
     height: 40px;
-    padding-top: 6px;
-    color: var(--white);
     background-color: var(--black);
+    color: var(--white);
+    padding-top: 10px;
     font-size: 20px;
 }
-footer ul li a:hover i.fa-facebook-f{
-    background-color: red;
+footer ul li a i.fa-facebook-f:hover{
+    background-color: var(--facebook-blue);
+}
+footer ul li a i.fa-twitter:hover{
+    background-color: var(--twitter-blue);
+}
+footer ul li a i.fa-linkedin-in:hover{
+    background-color: var(--linked-in-blue);
+}
+footer ul li a:hover i.fa-instagram{
+    background-image: linear-gradient(to bottom left,#F7AA4E,#E6495F,#AA2EB7);
+}
+footer input{
+    outline: none;
+}
+footer .cta-btn a{
+    background-color: var(--orange);
+}
+footer .cta-btn a:hover{
+    background-color: var(--black);
 }
 /* Footer section end  */
 /* Responsive section start */
@@ -167,6 +188,9 @@ footer ul li a:hover i.fa-facebook-f{
     }
     .testy-section h2{
         font-size: 125px;
+    }
+    footer input{
+        max-width: 280px;
     }
 }
 @media (max-width: 767px){
