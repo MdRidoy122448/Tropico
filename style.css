@@ -314,6 +314,9 @@ footer .cta-btn a:hover{
     }
 }
 @media (max-width: 767px){
+    .slider-section{
+        min-height: 80vh;
+    }
     .slider-section .previous-btn{
         display: none;
     }
