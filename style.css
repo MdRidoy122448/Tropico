@@ -30,15 +30,75 @@ body{
 .section-main-paragraph{
     font-size: 17px;
 }
-p{
-    font-size: 17px;
+h1{
+    font-size: 65px;
+}
+h2{
+    font-size: 177px;
+}
+h3{
+    font-size: 30px;
 }
 h5{
     color: var(--orange);
     font-size: 25px;
 }
-/* Common CSS end */
+p{
+    font-size: 17px;
+}
 
+/* Common CSS end */
+/* Header section start */
+.header-section{
+    padding: 20px 0;
+}
+.header-section form{
+    max-width:140px;
+}
+.header-section form input{
+    width: 100%;
+}
+.search-icon{
+    font-size: 20px;
+    display: inline-block;
+    background-color: rebeccapurple;
+}
+.header-section .login-btn{
+    background-color: var(--orange);
+    border-radius: 0;
+}
+/* Header section end */
+/* .slider section star */
+.slider-section{
+    padding: 90px 0;
+    position: relative;
+    min-height: 85vh;
+}
+.slider-section .cta-btn a.shop-btn{
+    background-color: var(--orange);
+}
+.slider-section .cta-btn a.shop-btn:hover{
+    background-color: var(--black);
+}
+.slider-section .previous-btn{
+    width: 40px;
+    height: 40px;
+    top: 250px;
+    left: 0;
+    position:absolute;
+    background-color: var(--orange);
+    opacity: 1;
+}
+.slider-section .next-btn{
+    width: 40px;
+    height: 40px;
+    top: 300px;
+    left: 0;
+    position:absolute;
+    background-color: var(--black);
+    opacity: 1;
+}
+/* .slider section end */
 /* Service section start */
 .service-seciton{
     padding: 70px 0;
@@ -97,10 +157,41 @@ h5{
     padding: 90px 0;
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("img/testy-bg.jpg");
 }
-.testy-section h2{
-    font-size: 177px;
-}
 /* Testy section end */
+/* Testimonial section start */
+.testimonial-section{
+    padding: 90px 0;
+}
+.testimonial-section p{
+    max-width: 900px;
+}
+.testimonial-section .user-name{
+    font-size: 25px;
+}
+.testimonial-section .controler-wrapper{
+    position: relative;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.testimonial-section .controler-wrapper .previous-btn{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: inline-block;
+}
+.testimonial-section .controler-wrapper .next-btn{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: inline-block;
+}
+/* Testimonial section end */
 /* Contact section start */
 .contact-section{
     padding: 60px 25px;
@@ -152,12 +243,6 @@ textarea::placeholder{
 footer{
     padding: 90px 0;
 }
-footer h3{
-    font-size: 30px;
-}
-footer p{
-    font-size: 17px;
-}
 footer ul {
     list-style: none;
 }
@@ -193,10 +278,16 @@ footer .cta-btn a:hover{
 /* Footer section end  */
 /* Responsive section start */
 @media (max-width: 991px){
+    .header-section form{
+        max-width:250px;
+    }
     .fruit-box p{
         max-width: 100%;
     }
-    .testy-section h2{
+    h1{
+        font-size: 45px;
+    }
+    h2{
         font-size: 125px;
     }
     footer input{
@@ -207,10 +298,13 @@ footer .cta-btn a:hover{
     }
 }
 @media (max-width: 767px){
+    .slider-section .cta-btn a{
+        padding: 10px 30px;
+    }
     .fresh-section .cta-btn {
         text-align: center;
     }
-    .testy-section h2{
+    h2{
         font-size: 80px;
     }
     .fresh-section .cta-btn {
@@ -221,11 +315,15 @@ footer .cta-btn a:hover{
     }
 }
 @media (max-width: 575px){
-    .testy-section h2{
+    h2{
         font-size: 40px;
     }
     .contact-section{
         background-size: 85% 75%;
+    }
+    .header-section form{
+        max-width:150;
+        padding: 0 10px;
     }
 }
 /* Responsive section end  */
