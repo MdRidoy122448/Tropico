@@ -66,13 +66,20 @@ p{
 .header-section .login-btn{
     background-color: var(--orange);
     border-radius: 0;
+    transition: .7s;
+}
+.header-section .login-btn:hover{
+    background-color: var(--black);
+    border-radius: 0;
 }
 /* Header section end */
 /* .slider section star */
 .slider-section{
     padding: 90px 0;
-    position: relative;
-    min-height: 85vh;
+    min-height: 70vh;
+}
+.slider-section img{
+    max-height: 340px;
 }
 .slider-section .cta-btn a.shop-btn{
     background-color: var(--orange);
@@ -170,23 +177,23 @@ p{
 }
 .testimonial-section .controler-wrapper{
     position: relative;
-    width: 170px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 .testimonial-section .controler-wrapper .previous-btn{
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: var(--black);
     display: inline-block;
 }
 .testimonial-section .controler-wrapper .next-btn{
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: var(--black);
     display: inline-block;
@@ -281,6 +288,15 @@ footer .cta-btn a:hover{
     .header-section form{
         max-width:250px;
     }
+    .slider-section{
+        min-height: 60vh;
+    }
+    .slider-section .cta-btn a{
+        padding: 10px 30px;
+    }
+    .slider-section p{
+        font-size: 14px;
+    }
     .fruit-box p{
         max-width: 100%;
     }
@@ -298,11 +314,17 @@ footer .cta-btn a:hover{
     }
 }
 @media (max-width: 767px){
-    .slider-section .cta-btn a{
-        padding: 10px 30px;
+    .slider-section .previous-btn{
+        display: none;
+    }
+    .slider-section .next-btn{
+        display: none;
     }
     .fresh-section .cta-btn {
         text-align: center;
+    }
+    h1{
+        font-size: 35px;
     }
     h2{
         font-size: 80px;
@@ -315,6 +337,9 @@ footer .cta-btn a:hover{
     }
 }
 @media (max-width: 575px){
+    h1{
+        font-size: 25px;
+    }
     h2{
         font-size: 40px;
     }
